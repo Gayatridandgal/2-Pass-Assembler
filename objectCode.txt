@@ -1,0 +1,6 @@
+2000	SETUP   	LDX     	#3      	050003
+2003	-       	LDA     	#2      	010002
+2006	PROCESS 	MUL     	DELTA,X 	E18201
+2009	-       	TIX     	INDEX   	030201
+200C	-       	JLT     	PROCESS 	030002
+200F	-       	+STA    	#FINAL  	10100201

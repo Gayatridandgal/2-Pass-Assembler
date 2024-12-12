@@ -1,0 +1,11 @@
+COMPUTE  START   2000
+SETUP    LDX     #3
+-        LDA     #2
+PROCESS  MUL     DELTA,X
+-        TIX     INDEX
+-        JLT     PROCESS
+-        +STA    #FINAL
+INDEX    RESW    1
+FINAL    RESW    1
+DELTA    RESB    60
+-        END     SETUP
